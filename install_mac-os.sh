@@ -56,7 +56,7 @@ installer "git" "brew install git --with-default-names" true
 
 installer "python" "brew install python --with-default-names && echo ${password} | sudo easy_install pip && brew install python3" true
 
-installer "zsh" "brew install zsh --with-default-names; info \"Add write permisstion to /usr/local/share\"; chmod go-w \"/usr/local/share\"; success \"Write permission added to /usr/local/share\"" true
+installer "zsh" "brew install zsh --with-default-names; info \"Add write permission to /usr/local/share\"; chmod go-w \"/usr/local/share\"; success \"Write permission added to /usr/local/share\"" true
 
 installer "nvm" "brew tap homebrew/core && brew install node && brew install nvm && mkdir $HOME/.nvm && export NVM_DIR="$HOME/.nvm" && source "/usr/local/opt/nvm/nvm.sh" && nvm install stable"
 
