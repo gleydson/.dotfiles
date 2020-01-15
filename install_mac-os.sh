@@ -66,7 +66,7 @@ installer "gradle" "brew install gradle"
   
 installer "yarn" "brew install yarn"
 
-installer "hyper" "brew cask install hyper""
+installer "hyper" "brew cask install hyper"
   
 installer "postman" "brew cask install postman"
 
