@@ -83,3 +83,5 @@ installer "zsh-autosuggestions" "git clone https://github.com/zsh-users/zsh-auto
 installer "zsh-syntax-highlighting" "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"
 
 installer "zsh-apple-touchbar" "git clone https://github.com/zsh-users/zsh-apple-touchbar $ZSH_CUSTOM/plugins/zsh-apple-touchbar"
+
+installer "whatsapp" "brew cask install whatsapp"
