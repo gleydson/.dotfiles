@@ -36,7 +36,7 @@ function installer() {
         install "${install}"
     fi
     
-    echo "Don't forget to manually download telegram for Mac OS and XCode from the Apple Store"
+    info "Don't forget to manually download telegram for Mac OS and XCode from the Apple Store"
 }
 
 installer "brew" 'echo ${password} | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' true
