@@ -46,21 +46,21 @@ else
     ln -sfn `pwd`/.zshrc ~/.zshrc
 fi
 
-installer "brew" 'echo ${password} | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' true
+installer "brew" 'echo ${password} | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"'
 
 brew update
 
 installer "brew cask" "brew tap caskroom/cask"
 
-installer "git" "brew install git --with-default-names" true
+installer "git" "brew install git --with-default-names"
 
-installer "python" "brew install python --with-default-names && echo ${password} | sudo easy_install pip && brew install python3" true
+installer "python" "brew install python --with-default-names && echo ${password} | sudo easy_install pip && brew install python3"
 
-installer "zsh" "brew install zsh --with-default-names; info \"Add write permission to /usr/local/share\"; chmod go-w \"/usr/local/share\"; success \"Write permission added to /usr/local/share\"" true
+installer "zsh" "brew install zsh --with-default-names; info \"Add write permission to /usr/local/share\"; chmod go-w \"/usr/local/share\"; success \"Write permission added to /usr/local/share\""
 
 installer "nvm" "brew tap homebrew/core && brew install node && brew install nvm && mkdir $HOME/.nvm && export NVM_DIR="$HOME/.nvm" && source "/usr/local/opt/nvm/nvm.sh" && nvm install stable"
 
-installer "java" 'echo ${password} | brew cask install java' true
+installer "java" 'echo ${password} | brew cask install java'
 
 installer "gradle" "brew install gradle"
   
