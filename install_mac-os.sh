@@ -85,3 +85,5 @@ installer "zsh-syntax-highlighting" "git clone https://github.com/zsh-users/zsh-
 installer "zsh-apple-touchbar" "git clone https://github.com/zsh-users/zsh-apple-touchbar $ZSH_CUSTOM/plugins/zsh-apple-touchbar"
 
 installer "whatsapp" "brew cask install whatsapp"
+
+installer "fastlane" "brew install fastlane"
