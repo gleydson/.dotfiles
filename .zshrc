@@ -46,7 +46,7 @@ success() {
   printf "\n${GREEN}%s${END}\n" "$*"
 }
 
-# Alias
+# Aliases
 alias gohome="cd $HOME"
 alias goprojects="cd $HOME/projects"
 alias gop="cd $HOME/projects/pessoais"
