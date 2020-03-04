@@ -49,7 +49,7 @@ success() {
 # Alias
 alias gohome="cd $HOME"
 alias goprojects="cd $HOME/projects"
-alias gopessoais="cd $HOME/projects/pessoais"
+alias gop="cd $HOME/projects/pessoais"
 alias gogm="cd $HOME/projects/greenmile"
 alias gomyorder="cd $HOME/projects/greenmile/gm-myorder"
 alias gogrc="cd $HOME/projects/greenmile/gm-react-components"
