@@ -94,5 +94,7 @@ installer "ffmpeg" "brew install ffmpeg"
 
 installer "vscode" "brew cask install visual-studio-code"
 
+installer "obs" "brew cask install obs"
+
 echo "Making Zsh the default shell"
 chsh -s $(which zsh)
