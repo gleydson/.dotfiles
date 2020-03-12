@@ -87,3 +87,12 @@ installer "zsh-apple-touchbar" "git clone https://github.com/zsh-users/zsh-apple
 installer "whatsapp" "brew cask install whatsapp"
 
 installer "fastlane" "brew install fastlane"
+
+installer "google-chrome" "brew cask install google-chrome"
+
+installer "ffmpeg" "brew install ffmpeg"
+
+installer "vscode" "brew cask install visual-studio-code"
+
+echo "Making Zsh the default shell"
+chsh -s $(which zsh)
