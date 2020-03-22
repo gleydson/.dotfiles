@@ -54,8 +54,6 @@ alias gogm="cd $HOME/projects/greenmile"
 alias gomyorder="cd $HOME/projects/greenmile/gm-myorder"
 alias gogrc="cd $HOME/projects/greenmile/gm-react-components"
 
-# Paths
-
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -67,3 +65,4 @@ export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
