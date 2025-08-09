@@ -1,0 +1,7 @@
+[user]
+	name = Gleydson Rodrigues
+	email = gleydsonsr@gmail.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = master
