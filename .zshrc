@@ -1,68 +1,44 @@
-export ZSH="/Users/$USER/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnoster"
-
+ZSH_THEME="robbyrussell"
+CASE_SENSITIVE="true"
 ENABLE_CORRECTION="true"
-COMPLETION_WAITING_DOTS="true"
 
 plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
-  zsh-apple-touchbar
 )
 
 source $ZSH/oh-my-zsh.sh
 
-# Color variables
+export EDITOR='vim'
 
-RED='\033[00;31m'
-GREEN='\033[00;32m'
-YELLOW='\033[00;33m'
-CYAN='\033[00;36m'
-WHITE='\033[01;37m'
-
-END=$'\e[0m'
-
-# Functions
-
-log() {
-  printf "\n${WHITE}%s${END}\n" "$*"
-}
-
-error() {
-  printf "\n${RED}%s${END}\n" "$*"
-}
-
-warning() {
-  printf "\n${YELLOW}%s${END}\n" "$*"
-}
-
-info() {
-  printf "\n${CYAN}%s${END}\n" "$*"
-}
-
-success() {
-  printf "\n${GREEN}%s${END}\n" "$*"
-}
-
+# -------
 # Aliases
-alias gohome="cd $HOME"
-alias goprojects="cd $HOME/projects"
-alias gop="cd $HOME/projects/pessoais"
-alias gogm="cd $HOME/projects/greenmile"
-alias gomyorder="cd $HOME/projects/greenmile/gm-myorder"
-alias gogrc="cd $HOME/projects/greenmile/gm-react-components"
+# -------
+alias l="ls" # List files in current directory
+alias ll="ls -al" # List all files in current directory in long list format
+alias o="open ." # Open the current directory in Finder
 
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
+# ----------------------
+# Git Aliases
+# ----------------------
+alias gaa='git add .'
+alias gcm='git commit -m'
+alias gpsh='git push'
+alias gss='git status -s'
+alias gs='echo ""; echo "*********************************************"; echo -e "   DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
 
-# Android
-export ANDROID_HOME=/Users/$USER/Library/Android/sdk
-export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
-# NVM
+# ----------------------
+# NVM Config
+# ----------------------
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# ----------------------
+# NVM alias
+# ----------------------
+alias nlts='nvm install --lts --latest-npm'
